@@ -1,6 +1,7 @@
-#include <stdlib.h>
+#include <stdio.h>
 
-int main() {
+int main() 
+{
     char *helloPtr = "Hello";
     char helloStr[] = "Hello";
 
@@ -8,6 +9,7 @@ int main() {
     printf("str: %d\n", sizeof(helloStr));
 
     helloStr[4] = 0;
+    printf("%s\n", helloStr); /* Hell */
     /* here we have an error */
     helloPtr[4] = 0;
 

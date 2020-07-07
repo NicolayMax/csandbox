@@ -6,8 +6,7 @@ int main()
     pr = 1;
     while ((c = getchar() != EOF))
     {
-        switch (c)
-        {
+        switch (c) {
         case '\n':
             putchar(c);
             pr = 1;
@@ -16,8 +15,9 @@ int main()
             pr = 0;
             break;
         default:
-            if(pr)
+            if(pr) {
                 putchar(c);
+            }
             break;
         }
     }
